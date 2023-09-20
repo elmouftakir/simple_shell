@@ -86,7 +86,7 @@ int _strcmp(char *s0, char *s1)
 
 /**
  * _strcpy - copy string
- * @dest: Array Copied
+ * @dest: Array Copied .
  * @src: - Source of array
  * Return: the string copied
  */
