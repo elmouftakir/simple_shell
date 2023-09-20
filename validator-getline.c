@@ -2,9 +2,9 @@
 
 /**
  * fun_strtok - function strtok
- * @buffer: pointer at buffer
+ * @buffer: pointer at buffer.
  * @pointer: pointer
- * Return: command
+ * Return: command.
  */
 
 char **fun_strtok(char *buffer, int pointer)
@@ -36,7 +36,7 @@ char **fun_strtok(char *buffer, int pointer)
 
 /**
  * _memory - buffer
- * @buffer: buffer
+ * @buffer: buffer.
  * Return: count
  */
 
@@ -55,7 +55,7 @@ int _memory(char *buffer)
 
 /**
  * _memory1 - memory buffer
- * @buffer: buffer
+ * @buffer: buffer.
  * Return: count.
  */
 
