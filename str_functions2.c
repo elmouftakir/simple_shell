@@ -1,11 +1,11 @@
 #include "shell.h"
+
 /**
  * _strstr - searches a string for any of a set of bytes
  * @haystack: first occurrence of the character
  * @needle: array string
  *Return: 0
  */
-
 char *_str_str(char *haystack, char *needle)
 {
 	int i;
@@ -32,7 +32,7 @@ char *_str_str(char *haystack, char *needle)
 /**
  * _itoa - function convert the integer to string
  * @num: input the number
- *Return: string
+ *Return: the string
  */
 
 
@@ -65,4 +65,3 @@ char *_itoa(int num)
 	str[i] = '\0';
 	return (str);
 }
-
