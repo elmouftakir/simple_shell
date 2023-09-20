@@ -56,7 +56,7 @@ int _memory(char *buffer)
 /**
  * _memory1 - memory buffer
  * @buffer: buffer
- * Return: count
+ * Return: count.
  */
 
 int _memory1(char *buffer)
