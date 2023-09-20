@@ -88,7 +88,7 @@ int _strcmp(char *s0, char *s1)
  * _strcpy - copy string
  * @dest: Array Copied .
  * @src: - Source of array
- * Return: the string copied
+ * Return: the string copied.
  */
 char *_strcpy(char *dest, char *src)
 {
