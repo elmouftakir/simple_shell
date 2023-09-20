@@ -53,7 +53,6 @@ char *_strcat(char *dest, char *src)
 	}
 	return (dest);
 }
-
 /**
  * _strlen - return the length of string
  * @s: caracter print
