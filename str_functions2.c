@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _strstr - searches a string for any of a set of bytes
+ * _str_str - searches a string for any of a set of bytes
  * @haystack: first occurrence of the character
  * @needle: array string
  *Return: 0
