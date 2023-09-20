@@ -36,7 +36,7 @@ char **fun_strtok(char *buffer, int pointer)
 
 /**
  * _memory - buffer
- * @buffer: buffer
+ * @buffer: buffer.
  * Return: count
  */
 
