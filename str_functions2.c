@@ -31,7 +31,7 @@ char *_str_str(char *haystack, char *needle)
 
 /**
  * _itoa - function convert the integer to string
- * @num: input the number
+ * @num: input the number.
  * Return: the string.
  */
 
