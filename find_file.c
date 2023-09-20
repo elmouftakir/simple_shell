@@ -40,7 +40,7 @@ char  *get_path(char *command)
 }
 
 /**
- * f_function - found directory
+ * found_function - found directory
  * @folder: Double pointer at the directory
  * @command: command found
  * Return: command
