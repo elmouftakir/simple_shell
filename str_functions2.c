@@ -2,7 +2,7 @@
 
 /**
  * _str_str - searches a string for any of a set of bytes
- * @haystack: first occurrence of the character
+ * @haystack: first occurrence of the character.
  * @needle: array string
  *Return: 0
  */
