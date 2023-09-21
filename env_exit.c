@@ -16,7 +16,7 @@ int env1(char *buffer, char **command)
 		ret = _strcmp(command[0], "env");
 		if (ret == 0)
 		{
-			for (i = 0; environ[i] != 	NULL; i++)
+			for (i = 0; environ[i] != NULL; i++)
 			{
 				for (j = 0; environ[i][j] != '\0'; j++)
 				{
