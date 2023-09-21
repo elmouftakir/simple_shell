@@ -3,7 +3,7 @@
 /**
  * val_getline - validator input
  * @void: parameter input
- * Return: buffer
+ * Return: buffer.
  */
 
 char *val_getline(void)
