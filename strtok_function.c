@@ -3,7 +3,7 @@
 /**
  * fun_strtok - function strtok
  * @buffer: pointer at buffer
- * @pointer: pointer
+ * @pointer: pointer.
  * Return: command
  */
 
