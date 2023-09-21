@@ -1,74 +1,58 @@
 #include "shell.h"
 
 /**
- * fun_strtok - function strtok
- * @buffer: pointer at buffer.
- * @pointer: pointer.
- * Return: command.
+ * val_getline - validator input
+ * @void: parameter input
+ * Return: buffer
  */
 
-char **fun_strtok(char *buffer, int pointer)
+char *val_getline(void)
 {
-	char **command;
-	size_t i;
-	char *tok;
-	char *delim = " \n\t";
+	char *buffer = NULL;
+	size_t size = 0;
+	ssize_t ret;
+	int i = 0;
 
-	command = malloc(sizeof(char *) * pointer);
-
-	if (command == NULL)
+	ret = getline(&buffer, &size, stdin);
+	if (!buffer)
+	{
+		perror("Error in Allocate Memory Buffer");
+		return (NULL);
+	}
+	if (ret == 1)
 	{
 		free(buffer);
 		return (NULL);
 	}
-	tok = strtok(buffer, delim);
-
-	i = 0;
-	while (tok)
+	else if (ret == EOF)
 	{
-		command[i] = tok;
-		tok = strtok(NULL, delim);
-		i++;
+		if (isatty(STDIN_FILENO))
+			write(STDOUT_FILENO, "\n", 1);
+		free(buffer);
+		exit(0);
 	}
-	command[i] = NULL;
-	return (command);
+	else
+	{
+		while (buffer[i] == ' ' && buffer[i + 1] == ' ')
+			i++;
+		if (buffer[i + 1] == '\n')
+		{
+			free(buffer);
+			return (NULL);
+		}
+	}
+	return (buffer);
 }
 
 /**
- * _memory - buffer
- * @buffer: buffer.
- * Return: count
+ * sig_handler - signal for press ctrl + D
+ * @signum: void input
+ * Return: no return
  */
 
-int _memory(char *buffer)
+
+void sig_handler(int signum)
 {
-	int i, count = 2;
-	char *delim = " ";
-
-	for (i = 0; buffer[i] != '\0'; i++)
-	{
-		if (buffer[i] == delim[0])
-			count++;
-	}
-	return (count);
+	(void) signum;
+	write(STDOUT_FILENO, "\n:) ", 4);
 }
-
-/**
- * _memory1 - memory buffer
- * @buffer: buffer.
- * Return: count.
- */
-
-int _memory1(char *buffer)
-{
-	int i, count = 2;
-	char *delim = ":";
-
-	for (i = 0; buffer[i] != '\0'; i++)
-	{
-		if (buffer[i] == delim[0])
-			count++;
-	}
-	return (count);
-}
-
