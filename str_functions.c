@@ -1,10 +1,11 @@
-#include "shell.h"
+ #include "shell.h"
 
 /**
  * _strdup - function that returns a pointer
  * @str: array
  * Return: Pointer of a string copied
  */
+
 char *_strdup(char *str)
 {
 	int i, j;
@@ -52,6 +53,7 @@ char *_strcat(char *dest, char *src)
 	}
 	return (dest);
 }
+
 /**
  * _strlen - return the length of string
  * @s: caracter print
@@ -86,15 +88,15 @@ int _strcmp(char *s0, char *s1)
 
 /**
  * _strcpy - copy string
- * @dest: Array Copied .
+ * @dest: Array Copied
  * @src: - Source of array
- * Return: the string copied.
+ * Return: the string copied
  */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	while (src[i])
+	while (src[i]) 
 	{
 		dest[i] = src[i];
 		i++;
