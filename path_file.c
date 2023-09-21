@@ -22,7 +22,7 @@ char *make_path(char *path, char *cmd)
 
 /**
  * get_path - gets the path
- * @cmd: command to get path of
+ * @cmd: command to get path
  * Return: path of the command
  */
 
