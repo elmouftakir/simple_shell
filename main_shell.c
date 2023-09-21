@@ -3,7 +3,7 @@
 /**
  * main - PROGRAM SHELL
  * @argc: Unused arg.
- * @argv: arg[0]
+ * @argv: arg[0].
  * Return: always return 0
  */
 
