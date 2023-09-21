@@ -4,7 +4,7 @@
  * env1 - Function the validate the variables
  * @buffer: string of getline
  * @command: is the arguments of buffer
- * Return: 1 is succes 0 is not
+ * Return: 1 is success 0 is not
  */
 
 int env1(char *buffer, char **command)
@@ -16,7 +16,7 @@ int env1(char *buffer, char **command)
 		ret = _strcmp(command[0], "env");
 		if (ret == 0)
 		{
-			for (i = 0; environ[i] != NULL; i++)
+			for (i = 0; environ[i] != 	NULL; i++)
 			{
 				for (j = 0; environ[i][j] != '\0'; j++)
 				{
