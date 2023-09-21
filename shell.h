@@ -28,7 +28,6 @@ int _strcmp(char *s0, char *s1);
 char *get_path(char *command);
 char *_strcat(char *dest, char *src);
 int _strlen(char *s);
-char *f_function(char **folder, char *command);
 void fun_fork(char *buffer, char **command, char **argv, int count);
 char *_itoa(int number);
 int *_perror(char *argv, char *str, char *command);
